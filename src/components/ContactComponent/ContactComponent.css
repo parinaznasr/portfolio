@@ -1,0 +1,58 @@
+.contact-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.contact-items{
+    width: 80%;
+    position: absolute;
+    height: 80vh;
+    left: 10%;
+    top: 10%;
+    vertical-align: middle;
+
+}
+
+.contact-items-frame{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 4%;
+    height: 60%;
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+}
+
+.contact-item{
+    width: 100%;
+    border-radius: 35px;
+    border: white 5px solid;
+    background-color: white;
+}
+
+.contact-logo{
+    position: relative;
+    width:10%;
+    text-align: center;
+    left: 45%;
+    top: 20%;
+}
+
+.contact-type{
+
+    position: relative;
+    width:80%;
+    text-align: center;
+    left: 10%;
+    top: 30%;
+}
+
+.contact-info{
+    position: relative;
+    width:80%;
+    text-align: center;
+    left: 10%;
+    top: 45%;
+} 

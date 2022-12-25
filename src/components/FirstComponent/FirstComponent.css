@@ -1,21 +1,111 @@
-.body{
-    background: url('../../assets/images/page1pic0.jpg') no-repeat center center fixed ;
+.body {
+    background: url("../../assets/images/page1pic0.jpg") no-repeat center center
+        fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;   
-    height:100vh;
+    background-size: cover;
+    height: 127vh;
 }
-.title{
+.section1 {
+    height: 100vh;
+}
+.title {
     font-size: 150px;
     text-align: left;
     font-weight: bold;
     margin-left: 40px;
-    position: fixed;
+    position: absolute;
     bottom: 7%;
 }
-.name{
+.name {
     font-size: 40px;
     margin-left: 10px;
     margin-top: -3%;
+}
+.icon-container {
+    height: 27vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+}
+.icon {
+    padding: 4% 1%;
+    margin: 1% 5%;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.icon > div {
+    font-size: 20px;
+}
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
