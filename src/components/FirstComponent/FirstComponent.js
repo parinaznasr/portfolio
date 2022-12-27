@@ -1,19 +1,39 @@
 import React, {
-  Component
+  Component,
+  useState,
+  useRef,
 } from "react";
 import "./FirstComponent.css";
 import BlurOnIcon from '@mui/icons-material/BlurOn';
 import PersonIcon from '@mui/icons-material/Person';
 import SendIcon from '@mui/icons-material/Send';
 import { useNavigate } from "react-router-dom";
-
+import ContactComponent from "../ContactComponent";
 
 const FirstComponent = (props) => {
+
+  const bottomRef = useRef();
+  const [viewContacts, setViewContacts] = useState(false);
+
   const navigate = useNavigate();
 
-  const takeToComponent = () => {
-    navigate(`/contact`);
+  const takeToComponent = async ()  => {
+    // navigate(`/contact`);
+    setViewContacts(true);
+    await sleep(400);
+    scrollToBottom();
   }
+
+  const scrollToBottom = () => {
+    const element = document.getElementById('contactscomponentid');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const sleep = ms => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
 
   return (
     <div className="body">
@@ -42,6 +62,11 @@ const FirstComponent = (props) => {
           </div>
         </div>
       </div>
+
+      {viewContacts &&
+          <ContactComponent />
+      }
+      <div id="contactscomponentid"></div>
     </div>
   );
 }
