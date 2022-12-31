@@ -17,11 +17,14 @@ const FirstComponent = (props) => {
 
   const navigate = useNavigate();
 
-  const takeToComponent = async ()  => {
-    // navigate(`/contact`);
+  const contactClicked = async ()  => {
     setViewContacts(true);
     await sleep(400);
     scrollToBottom();
+  }
+
+  const cvClicked = (event) =>{
+    navigate('./cv')
   }
 
   const scrollToBottom = () => {
@@ -53,10 +56,10 @@ const FirstComponent = (props) => {
             <div>Projects</div>
           </div>
           <div className="icon fade-in">
-            <PersonIcon sx={{ fontSize: 100 }} />
+            <PersonIcon sx={{ fontSize: 100 }} onClick={cvClicked}/>
             <div>CV</div>
           </div>
-          <div className="icon fade-in" onClick={takeToComponent}>
+          <div className="icon fade-in" onClick={contactClicked}>
             <SendIcon sx={{ fontSize: 100 }} />
             <div>Contanct</div>
           </div>

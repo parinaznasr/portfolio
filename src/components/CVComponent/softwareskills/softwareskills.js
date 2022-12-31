@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import './softwareskills.css'
 
-class Softwareskills extends Component {
-  render() {
-    return <div>Softwareskills</div>;
-  }
+const Softwareskills = () => {
+  return(
+    <div className="ss-body"></div>
+  );
 }
 
 export default Softwareskills;

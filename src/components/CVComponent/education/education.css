@@ -1,0 +1,31 @@
+.education-body{
+    height: 60vh;
+    background-image:url("../../../assets/images/cvpagepic2.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.education-blackbackground{
+    background-color: rgba(58, 58, 58, 0.802);
+    width:100%;
+    height:60vh;
+}
+
+.education-award-grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.education{
+    text-align: right;
+}
+
+.awards{
+    /* width: 30%; */
+}
+

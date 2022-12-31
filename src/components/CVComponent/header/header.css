@@ -1,0 +1,40 @@
+.header-body{
+    background-color: rgb(89, 89, 89);
+}
+
+.header-style{
+    height:30vh;
+    background-color: rgb(253, 255, 233);
+    background-image: url("../../../assets/images/cvpagepic1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-photo{
+    height: 240px;
+    background-image: url('../../../assets/images/cvpagepic0.PNG');
+    width: 240px;
+    position: absolute;
+    top: 17%;
+    left: 100px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-description{
+    position: absolute;
+    top: 16%;
+    left: 380px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-name{
+    position: absolute;
+    top: 24%;
+    left: 380px;
+    font-size: 30px;
+}

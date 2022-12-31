@@ -1,0 +1,21 @@
+.aboutme-container{
+    background-color: rgba(128, 128, 128, 0.574);
+    width: 100%;
+    height: 55vh;
+}
+
+.aboutme-title{
+    position: relative;
+    top: 100px;
+    left: 380px;
+    font-size: 35px;
+    font-weight: bold;
+    width:50%;
+}
+
+.aboutme-description{
+    position: relative;
+    top: 130px;
+    left: 380px;
+    width: 40%;
+}
