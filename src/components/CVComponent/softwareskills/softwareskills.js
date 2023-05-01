@@ -6,7 +6,6 @@ const Softwareskills = () => {
       <div className="ss-grid">
         <img className="ss-image" src={'./images/logos/rhinoceros.png'} alt={"rhino"}/>
         <img className="ss-image" src={'./images/logos/grasshopper-solid.png'} alt={"grasshopper"}/>
-        <img className="ss-image" src={'./images/logos/grasshopper.jpg'} alt={"grasshopper"}/>
         <img className="ss-image" src={'./images/logos/adobe-photoshop-logo.png'} alt={"Adobe Photoshop"}/>
         <img className="ss-image" src={'./images/logos/Adobe_Illustrator.png'} alt={"Illustrator"}/>
 

@@ -4,9 +4,11 @@ import AboutMe from "./aboutme/index.js";
 import Education from "./education/index.js";
 import Personalskills from "./personalskills/index.js";
 import Softwareskills from "./softwareskills/index.js";
+import Experience from "./experience/index.js";
+
 import "./CVComponent.css"
 
-const CVComponent = () => {  
+const CVComponent = () => {
 
   useEffect(() => {
     console.log("Hello");
@@ -29,6 +31,7 @@ const CVComponent = () => {
       <Education/>
       <Personalskills/>
       <Softwareskills/>
+      <Experience/>
     </div>
   );
 }

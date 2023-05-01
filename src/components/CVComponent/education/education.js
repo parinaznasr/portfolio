@@ -26,6 +26,9 @@ const education = () => {
           <div className="education-title">Awards</div>
             <div className="education">
               <div className="education-item">
+                Some descriptions, Some descriptions,Some descriptions,Some descriptionsSome descriptions,Some descriptions.
+              </div>
+              <div className="education-item">
                 <div className="awards">
                   Award 1
                 </div>
