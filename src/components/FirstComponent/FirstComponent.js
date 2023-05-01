@@ -19,8 +19,10 @@ const FirstComponent = (props) => {
 
   const contactClicked = async ()  => {
     setViewContacts(true);
+    // setViewContacts(!viewContacts);
     await sleep(400);
     scrollToBottom();
+    // viewContacts ? scrollToBottom(): scrollToTop();
   }
 
   const cvClicked = (event) =>{
@@ -29,6 +31,13 @@ const FirstComponent = (props) => {
 
   const scrollToBottom = () => {
     const element = document.getElementById('contactscomponentid');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const scrollToTop = () => {
+    const element = document.getElementById('iconsid');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -48,7 +57,7 @@ const FirstComponent = (props) => {
           </div>
         </div>
       </div>
-
+      <div id="iconsid"></div>
       <div className="icon-container">
         <div className="icon-list">
           <div className="icon fade-in" onClick={() => { }}>

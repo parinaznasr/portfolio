@@ -22,8 +22,8 @@ const ContactComponent = () => {
           <div className="contact-item fade-in">
             <div className="contact-logo"><EmailIcon sx={{ fontSize: 45 }} /></div>
             <div className="contact-type">Email</div>
-            <div className="contact-info">yasamanpazoki@gmail.com</div>
-            <div className="contact-info">yasaman.pazoki@mail.utoronto.ca</div>
+            <a href="mailto:yasamanpazoki@gmail.com" className="contact-email">yasamanpazoki@gmail.com</a><br/>
+            <a href="mailto:yasaman.pazoki@mail.utoronto.ca" className="contact-email">yasaman.pazoki@mail.utoronto.ca</a>
           </div>
         </div>
       </div>
