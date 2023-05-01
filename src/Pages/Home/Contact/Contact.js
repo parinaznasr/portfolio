@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ContactComponent.css";
+import "./Contact.css";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';

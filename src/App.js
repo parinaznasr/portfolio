@@ -1,18 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Link, Routes } from "react-router-dom";
-import FirstComponent from './components/FirstComponent/index.js';
-import ContactComponent from './components/ContactComponent/index.js';
-import Header from './components/CVComponent/header/index.js';
-import CVComponent from './components/CVComponent/index.js';
+import Home from './Pages/Home/Home.js';
+import CV from './Pages/CV/CV.js';
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<FirstComponent/>} />
-        {/* <Route path="/" element={<Header/>} /> */}
-        <Route path="/cv" element={<CVComponent/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/cv" element={<CV/>} />
+        <Route path="/projects" element={<CV/>} />
       </Routes>
     </div>
   );

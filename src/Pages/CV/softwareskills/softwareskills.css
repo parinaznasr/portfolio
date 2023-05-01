@@ -11,19 +11,23 @@
 }
 
 .ss-grid{
-    margin-left: 380px;
+    margin: 70px 380px;
     font-size: calc(0.3vw + 0.9em);
     line-height: 35px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
     word-wrap: break-word;
     gap: 40px 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
 }
 
 .ss-image{
     width: auto;
-    height: 150px;
+    height: 10vh;
+    max-height: 100px;
     object-fit: cover;
 }
 
