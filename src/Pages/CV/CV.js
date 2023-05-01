@@ -5,7 +5,6 @@ import Education from "./education/index.js";
 import Personalskills from "./personalskills/index.js";
 import Softwareskills from "./softwareskills/index.js";
 import Experience from "./experience/index.js";
-import styled from 'styled-components';
 import "./CV.css";
 import Footer from "../../UtilComponents/Footer/Footer";
 
