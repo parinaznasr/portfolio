@@ -20,7 +20,8 @@
   "scripts": {
     "start": "node app.js",
     "devstart": "nodemon app.js",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
