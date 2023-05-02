@@ -1,6 +1,5 @@
 .contact-container{
     background-color: rgba(0, 0, 0, 0.5);
-    height: 40vh;
 }
 
 .contact-items{
@@ -16,6 +15,7 @@
     width: 20%;
     min-width: 250px;
     min-height: 300px;
+    margin-bottom: 20px;
     border-radius: 35px;
     background-color: rgb(220, 220, 219, 0.7);
     overflow: auto;
