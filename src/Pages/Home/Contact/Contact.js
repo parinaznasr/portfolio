@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Contact.css";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
