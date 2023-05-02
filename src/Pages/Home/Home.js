@@ -56,7 +56,6 @@ const FirstComponent = (props) => {
                     </div>
                 </div>
             </div>
-            <div id="iconsid"></div>
             <div className="icon-container">
                 <div className="icon-list">
                     <div className="icon fade-in" onClick={() => { }}>

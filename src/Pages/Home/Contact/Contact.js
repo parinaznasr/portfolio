@@ -8,7 +8,7 @@ const ContactComponent = () => {
   return (
     <div className="contact-container">
       <div className="contact-items">
-        <div className="contact-items-frame">
+        {/*<div className="contact-items-frame">*/}
           <div className="contact-item fade-in">
             <div className="contact-logo"><FmdGoodIcon sx={{ fontSize: 45 }} /></div>
             <div className="contact-type">Location</div>
@@ -25,7 +25,7 @@ const ContactComponent = () => {
             <a href="mailto:yasamanpazoki@gmail.com" className="contact-email">yasamanpazoki@gmail.com</a><br/>
             <a href="mailto:yasaman.pazoki@mail.utoronto.ca" className="contact-email">yasaman.pazoki@mail.utoronto.ca</a>
           </div>
-        </div>
+        {/*</div>*/}
       </div>
     </div>
   );
