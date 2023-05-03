@@ -59,16 +59,17 @@ const FirstComponent = (props) => {
             <div className="icon-container">
                 <div className="icon-list">
                     <div className="icon fade-in" onClick={() => { }}>
-                        <BlurOnIcon sx={{ fontSize: 100 }} />
-                        <div>Projects</div>
+                        <div id="contactscomponentid"></div>
+                        <BlurOnIcon sx={{ fontSize: 90 }} />
+                        <div className="icon-title">Projects</div>
                     </div>
                     <div className="icon fade-in">
-                        <PersonIcon sx={{ fontSize: 100 }} onClick={cvClicked}/>
-                        <div>CV</div>
+                        <PersonIcon sx={{ fontSize: 90 }} onClick={cvClicked}/>
+                        <div className="icon-title">CV</div>
                     </div>
                     <div className="icon fade-in" onClick={contactClicked}>
-                        <SendIcon sx={{ fontSize: 100 }} />
-                        <div>Contanct</div>
+                        <SendIcon sx={{ fontSize: 90 }} />
+                        <div className="icon-title">Contanct</div>
                     </div>
                 </div>
             </div>
@@ -76,7 +77,6 @@ const FirstComponent = (props) => {
             {viewContacts &&
             <Contact />
             }
-            <div id="contactscomponentid"></div>
         </div>
     );
 }
