@@ -61,15 +61,15 @@ const FirstComponent = (props) => {
                     <div className="icon fade-in" onClick={() => { }}>
                         <div id="contactscomponentid"></div>
                         <BlurOnIcon sx={{ fontSize: 90 }} />
-                        <div className="icon-title">Projects</div>
+                        <div>Projects</div>
                     </div>
                     <div className="icon fade-in">
                         <PersonIcon sx={{ fontSize: 90 }} onClick={cvClicked}/>
-                        <div className="icon-title">CV</div>
+                        <div>CV</div>
                     </div>
                     <div className="icon fade-in" onClick={contactClicked}>
                         <SendIcon sx={{ fontSize: 90 }} />
-                        <div className="icon-title">Contanct</div>
+                        <div>Contanct</div>
                     </div>
                 </div>
             </div>

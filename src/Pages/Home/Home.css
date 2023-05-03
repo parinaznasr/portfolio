@@ -63,17 +63,13 @@
     transition: 1s;
 }
 
-.icon-title {
-    font-size: calc(0.1em + 0.1em);;
-}
-
 .icon:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
 .icon > div {
-    font-size: 20px;
+    font-size:calc(1.4vw + 0.2em);
 }
 
 .fade-in {
