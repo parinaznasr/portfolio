@@ -1,6 +1,6 @@
 import React, {
     useState,
-    useRef,
+    useRef, useEffect,
 } from "react";
 import "./Home.css";
 import BlurOnIcon from '@mui/icons-material/BlurOn';
@@ -10,9 +10,8 @@ import { useNavigate } from "react-router-dom";
 import Contact from "../../Pages/Home/Contact/Contact";
 
 const FirstComponent = (props) => {
-
-    const bottomRef = useRef();
     const [viewContacts, setViewContacts] = useState(false);
+    const [iconSize, setIconSize] = useState(90);
 
     const navigate = useNavigate();
 
@@ -46,6 +45,22 @@ const FirstComponent = (props) => {
         resolve => setTimeout(resolve, ms)
     );
 
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth < 768) {
+                setIconSize(60);
+            } else {
+                setIconSize(90);
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className="body">
             <div className="section1">
@@ -60,15 +75,15 @@ const FirstComponent = (props) => {
                 <div className="icon-list">
                     <div className="icon fade-in" onClick={() => { }}>
                         <div id="contactscomponentid"></div>
-                        <BlurOnIcon sx={{ fontSize: 90 }} />
+                        <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                         <div>Projects</div>
                     </div>
                     <div className="icon fade-in">
-                        <PersonIcon sx={{ fontSize: 90 }} onClick={cvClicked}/>
+                        <PersonIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} onClick={cvClicked}/>
                         <div>CV</div>
                     </div>
                     <div className="icon fade-in" onClick={contactClicked}>
-                        <SendIcon sx={{ fontSize: 90 }} />
+                        <SendIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                         <div>Contanct</div>
                     </div>
                 </div>
