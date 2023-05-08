@@ -1,49 +1,78 @@
-.experience-body{
-    margin-top: 130px;
-    height: 50vh;
-    background-color: rgb(234, 223, 215);
-    /*background-color: rgb(218, 179, 173);*/
-    /*background-color: rgb(214, 217, 218);*/
-    /*background-color: rgb(109, 128, 151);*/
-    /*background-color: rgb(187, 190, 197);*/
-
-
-    /*background-color: rgb(188, 199, 211);*/
-    /*background-color: rgb(201, 209, 212);*/
-    /*background-color: rgb(214, 217, 218);*/
-    /*background-color: rgb(152, 151, 149);*/
-    background-color: rgb(112, 113, 118);
+.container {
+    display: flex;
 }
 
-.experience-blackbackground{
-    background-color: rgba(58, 58, 58, 0.802);
-    width:100%;
-    height:60vh;
+.experience-body {
+    background-color: rgb(231, 231, 231);
+    font-size: calc(0.8em + 0.2vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.experience-grid{
-    margin-left: 380px;
+.experience-blackbackground {
+    /*background-color: rgba(128, 128, 128, 0.374);*/
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-grid {
+    margin: 70px 0px 0px 0px;
     font-size: calc(0.3vw + 0.9em);
-    line-height: 35px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    word-wrap: break-word;
-    gap: 40px 30px;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.experience-image{
-    width: auto;
-    height: 150px;
-    object-fit: cover;
-}
-
-.experience{
+.experience {
     text-align: right;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
-.experience-item{
+.experience-item {
     width: 60%;
     text-align: left;
+}
+
+.experience-item__title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-item__dates {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-item__description {
+    font-size: 14px;
+}
+
+.experience-section {
+    margin-top: 50px;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.experience-item__title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-item__dates {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.experience-item__description {
+    font-size: 14px;
 }

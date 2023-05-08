@@ -1,5 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
+import BlurOnIcon from "@mui/icons-material/BlurOn";
+import HomeIcon from "@mui/icons-material/Home";
+import {useNavigate} from "react-router-dom";
 
 const StyledFooter = styled.div`
   width: 100%;
@@ -7,7 +10,7 @@ const StyledFooter = styled.div`
   right: 0px;
   padding: 10px 0;
   white-space: nowrap;
-  background-color: #18955b;
+  background-color: #2c313b;
   font-size: calc(0.8em + 0.2vw);
   height: 120px;
   display: flex;
@@ -73,28 +76,35 @@ const StyledFooter = styled.div`
 
 `;
 
-const Footer = () => (
-    <StyledFooter>
-        <div className="links">
-            <div className="link-container">
-                <a href="/project">Projects</a>
-            </div>
+const Footer = () => {
+    const [iconSize, setIconSize] = useState(90);
+    const navigate = useNavigate();
 
-            <div className="link-container">
-                <a href="/">Home</a>
-            </div>
+    return(
+        <StyledFooter>
+            <div className="links">
+                <div className="icon fade-in" onClick={() => { }}>
+                    <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <div>Projects</div>
+                </div>
 
-            <div className="link-container">
-                <a href="/Gallery">Gallery</a>
-            </div>
+                <div className="icon fade-in" onClick={() => navigate('../')}>
+                    <HomeIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <div>Home</div>
+                </div>
 
-        </div>
-        <div className="contact">
-            <h2>Contact</h2>
-            phone number
-        </div>
-    </StyledFooter>
-);
+                {/*<div className="link-container">*/}
+                {/*    <a href="/Gallery">Gallery</a>*/}
+                {/*</div>*/}
+
+            </div>
+            <div className="contact">
+                <h2>Contact</h2>
+                phone number
+            </div>
+        </StyledFooter>
+    )
+};
 
 
 export default Footer;

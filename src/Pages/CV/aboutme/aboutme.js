@@ -10,7 +10,7 @@ const aboutme = () => {
                   About Me
               </div>
               <div className="aboutme-description">
-                  A highly motivated student of Architectural Studies: Technology of Architecture, Landscape, and Urbanism Specialist Stream at the University of Toronto. Engaged in creative design projects since middle school where I had the chance to develop a problem-solving mindset and expanded my creativity. Enthusiatic to learn more deeply and combine new design techniques with neuroscience to enhance people's quality of life on different scales. I believe in the significance of environmental design in bringing equity to society, addressing crucial urban issues and offering an equal chance to grow.
+                  As an architecture student, my objective is to secure a summer internship that aligns with my field of interest, such as sustainable design, while utilizing my relevant skills in Rhino, Grasshopper, AutoCad, and Adobe Creative Suite. I am eager to gain valuable experience in specific aspects of the field, such as green building practices and urban planning, while contributing to a dynamic team and expanding my professional network.
               </div>
           </div>
       </StyledSection>

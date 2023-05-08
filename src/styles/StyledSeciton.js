@@ -5,7 +5,6 @@ export const StyledSection = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
     h1 {
         font-size:calc(1.8vw + 0.7em);
         font-family: 'Rubik', sans-serif; 
