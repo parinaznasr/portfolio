@@ -2,33 +2,33 @@ import React from "react";
 import "./experience.css";
 import styled from "styled-components";
 
-const StyledExperience = styled.div`
-  width: 100%;
-  height: auto;
-  bottom: 0px;
-  right: 0px;
-  padding: 10px 0;
-  background-color: rgba(128, 128, 128, 0.374);
-  font-size: calc(0.8em, 0.2vw);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const StyledSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 80vw;
-
-  @media only screen and (max-width: 800px) {
-    width: 90%;
-    text-align: justify;
-  }
-`;
+// const StyledExperience = styled.div`
+//   width: 100%;
+//   height: auto;
+//   bottom: 0px;
+//   right: 0px;
+//   padding: 10px 0;
+//   background-color: rgba(128, 128, 128, 0.374);
+//   font-size: calc(0.8em, 0.2vw);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// `;
+//
+// const StyledSection = styled.section`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 auto;
+//   text-align: center;
+//   max-width: 80vw;
+//
+//   @media only screen and (max-width: 800px) {
+//     width: 90%;
+//     text-align: justify;
+//   }
+// `;
 
 const experience = () => {
     const experience = [
@@ -64,22 +64,36 @@ const experience = () => {
         },
     ];
     return (
-        <StyledExperience>
-            <StyledSection>
-                <h2>Experience</h2>
-                {experience.map((item) => {
-                    return (
-                        <div className="experience-item">
-                            <div className="experience-item__title">{item.title}</div>
-                            <div className="experience-item__dates">
-                                {item.position} ({item.date})
-                            </div>
-                            <div className="experience-item__description">{item.desc}</div>
+        <div className="experience-section">
+            <h2 className="experience-title">Experience</h2>
+            {experience.map((item) => {
+                return (
+                    <div className="experience-item">
+                        <div className="experience-item__title">{item.title}</div>
+                        <div className="experience-item__dates">
+                            {item.position} ({item.date})
                         </div>
-                    );
-                })}
-            </StyledSection>
-        </StyledExperience>
+                        <div className="experience-item__description">{item.desc}</div>
+                    </div>
+                );
+            })}
+        </div>
+        // <StyledExperience>
+        //     <StyledSection>
+        //         <h2>Experience</h2>
+        //         {experience.map((item) => {
+        //             return (
+        //                 <div className="experience-item">
+        //                     <div className="experience-item__title">{item.title}</div>
+        //                     <div className="experience-item__dates">
+        //                         {item.position} ({item.date})
+        //                     </div>
+        //                     <div className="experience-item__description">{item.desc}</div>
+        //                 </div>
+        //             );
+        //         })}
+        //     </StyledSection>
+        // </StyledExperience>
     );
 };
 
