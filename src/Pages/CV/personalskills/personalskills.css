@@ -1,32 +1,37 @@
-/* Personal skills container */
-.personal-skills {
-    list-style: none;
-    margin: 130px 0px 0px 0px;
-    padding: 0;
+.skills-section {
+    background-color: rgb(234, 221, 212);
+    padding: 30px;
+    text-align: center;
 }
 
-/* Personal skill item */
-.personal-skill {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.skills-title {
+    line-height: 1.5;
+    text-align: left;
+    max-width: 550px;
+    margin: 100px auto 30px auto;
+    font-size: 35px;
 }
 
-/* Personal skill icon */
-.personal-skill-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ffffff; /* Change this to the desired color */
-    font-size: 13px; /* Change this to the desired font size */
-    margin-right: 20px;
-}
-
-/* Personal skill name */
-.personal-skill-name {
+.skills-list {
     font-size: 14px;
-    /*font-weight: 700;*/
+    line-height: 1.5;
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills-list {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .skills-list {
+        font-size: 16px;
+    }
 }

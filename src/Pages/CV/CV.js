@@ -12,7 +12,6 @@ import Footer from "../../UtilComponents/Footer/Footer";
 const CVComponent = () => {
 
     useEffect(() => {
-        console.log("Hello");
         scrollToTop();
     })
 
