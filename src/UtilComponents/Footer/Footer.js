@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import BlurOnIcon from "@mui/icons-material/BlurOn";
 import HomeIcon from "@mui/icons-material/Home";
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import {useNavigate} from "react-router-dom";
 
 const StyledFooter = styled.div`
@@ -93,15 +94,16 @@ const Footer = () => {
                     <div>Home</div>
                 </div>
 
-                {/*<div className="link-container">*/}
-                {/*    <a href="/Gallery">Gallery</a>*/}
-                {/*</div>*/}
+                <div className="icon fade-in" onClick={() => navigate('')}>
+                    <ArrowCircleUpIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <div>Top</div>
+                </div>
 
             </div>
-            <div className="contact">
-                <h2>Contact</h2>
-                phone number
-            </div>
+            {/*<div className="contact">*/}
+            {/*    <h2>Contact</h2>*/}
+            {/*    phone number*/}
+            {/*</div>*/}
         </StyledFooter>
     )
 };
