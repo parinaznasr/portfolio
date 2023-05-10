@@ -13,7 +13,7 @@ const education = () => {
                 <div className="program-description">Technology of Architecture, Landscape, and Urbanism Specialist
                   Stream
                 </div>
-                <div className="university-name"><b>University of Toronto</b> - John H.Daniels Faculty of Architecture,
+                <div className="university-name">University of Toronto - John H.Daniels Faculty of Architecture,
                   Landscape, and Design
                 </div>
                 <div className="program-dates">09/2020 - Present</div>

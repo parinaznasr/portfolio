@@ -16,15 +16,15 @@
 
 .education {
     margin: 20px;
-    text-align: right;
+    text-align: left;
 }
 
 /* Education section title */
 .education-title {
     font-size: 35px;
     font-weight: bold;
-    text-align: right;
-    margin: 0px 20px 20px 20px;
+    text-align: left;
+    margin: 0px 20px 30px 20px;
 }
 
 .award-title {
@@ -41,8 +41,7 @@
 }
 
 .education-item {
-    /*width: calc(50% - 50px);*/
-    width: 600px;
+    width: 675px;
     margin: 100px auto 0px auto;
 }
 
@@ -100,12 +99,8 @@
 .university-name,
 .program-dates,
 .awards {
-    font-size: 16px;
+    font-size: calc(0.3vw + 0.9vw);
     margin-bottom: 10px;
-}
-
-.awards {
-    font-weight: bold;
 }
 
 /* Awards section */
@@ -146,6 +141,7 @@
 }
 
 .awards-description {
-    font-size: 16px;
+    font-size: calc(0.3vw + 0.9vw);
     margin-bottom: 10px;
+    text-align: justify;
 }

@@ -1,34 +1,5 @@
 import React from "react";
 import "./experience.css";
-import styled from "styled-components";
-
-// const StyledExperience = styled.div`
-//   width: 100%;
-//   height: auto;
-//   bottom: 0px;
-//   right: 0px;
-//   padding: 10px 0;
-//   background-color: rgba(128, 128, 128, 0.374);
-//   font-size: calc(0.8em, 0.2vw);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
-//
-// const StyledSection = styled.section`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 0 auto;
-//   text-align: center;
-//   max-width: 80vw;
-//
-//   @media only screen and (max-width: 800px) {
-//     width: 90%;
-//     text-align: justify;
-//   }
-// `;
 
 const experience = () => {
     const experience = [

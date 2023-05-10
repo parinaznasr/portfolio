@@ -11,7 +11,7 @@ const StyledFooter = styled.div`
   right: 0px;
   padding: 10px 0;
   white-space: nowrap;
-  background-color: rgba(72, 71, 70, 0.87);
+  background-color: #fff;
   font-size: calc(0.8em + 0.2vw);
   height: 120px;
   display: flex;
