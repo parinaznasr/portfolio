@@ -28,7 +28,7 @@
     position: absolute;
     top: 16%;
     left: 380px;
-    font-size: 50px;
+    font-size: calc(18px + 2vw);
     font-weight: bold;
 }
 
@@ -36,5 +36,5 @@
     position: absolute;
     top: 24%;
     left: 380px;
-    font-size: 30px;
+    font-size: calc(14px + 2vw);
 }

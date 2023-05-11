@@ -18,7 +18,7 @@ const CVComponent = () => {
 
 
     const scrollToTop = () => {
-        const element = document.getElementById('bodycomponent');
+        const element = document.getElementById('header-body');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
