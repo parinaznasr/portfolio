@@ -1,5 +1,7 @@
 import React from "react";
 import "./experience.css";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Unstable_Grid2";
 
 const experience = () => {
     const experience = [
@@ -36,35 +38,27 @@ const experience = () => {
     ];
     return (
         <div className="experience-section">
-            <h2 className="experience-title">Experience</h2>
-            {experience.map((item) => {
-                return (
-                    <div className="experience-item">
-                        <div className="experience-item__title">{item.title}</div>
-                        <div className="experience-item__dates">
-                            {item.position} ({item.date})
-                        </div>
-                        <div className="experience-item__description">{item.desc}</div>
-                    </div>
-                );
-            })}
+            {/*<Container>*/}
+                <Grid container spacing={1}>
+                    <Grid xs={2}/>
+                    <Grid xs={8}>
+                        <h2 className="experience-title">Experience</h2>
+                        {experience.map((item) => {
+                            return (
+                                <div className="experience-item">
+                                    <div className="experience-item__title">{item.title}</div>
+                                    <div className="experience-item__dates">
+                                        {item.position} ({item.date})
+                                    </div>
+                                    <div className="experience-item__description">{item.desc}</div>
+                                </div>
+                            );
+                        })}
+                    </Grid>
+                    <Grid xs={2}/>
+                </Grid>
+            {/*</Container>*/}
         </div>
-        // <StyledExperience>
-        //     <StyledSection>
-        //         <h2>Experience</h2>
-        //         {experience.map((item) => {
-        //             return (
-        //                 <div className="experience-item">
-        //                     <div className="experience-item__title">{item.title}</div>
-        //                     <div className="experience-item__dates">
-        //                         {item.position} ({item.date})
-        //                     </div>
-        //                     <div className="experience-item__description">{item.desc}</div>
-        //                 </div>
-        //             );
-        //         })}
-        //     </StyledSection>
-        // </StyledExperience>
     );
 };
 

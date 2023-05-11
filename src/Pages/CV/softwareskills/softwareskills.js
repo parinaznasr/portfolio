@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './softwareskills.css'
-import Container from '@mui/material/Container';
+import Grid from "@mui/material/Unstable_Grid2";
 
 const Softwareskills = () => {
   const [hoveredImg, setHoveredImg] = useState(null);
@@ -51,32 +51,45 @@ const Softwareskills = () => {
     { name: "Sketchup", prof: "3", alt:"Sketchup", image:"./images/logos/sketchup.png", desc:""},
   ]
   return(
-  <Container >
-    <div className="ss-body">
-      <div className="ss-grid">
-        {
-          software.filter(item=> item.prof ==="1").map(item=> {
-            return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
-          })
-        }
-      </div>
-      <div className="ss-grid">
-        {
-          software.filter(item=> item.prof ==="2").map(item=> {
-            return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
-          })
-        }
-      </div>
-      <div className="ss-grid">
-        {
-          software.filter(item=> item.prof ==="3").map(item=> {
-            return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
-          })
-        }
-      </div>
-      <div className="tooltip"></div>
-    </div>
-  </Container>
+  // <Container >
+      <>
+        <Grid container spacing={1}>
+          <Grid xs={12}>
+            <h2 className="ss-title">Software Skills</h2>
+          </Grid>
+        </Grid>
+        <Grid container spacing={1}>
+          <Grid xs={2}/>
+          <Grid xs={8}>
+            <div className="ss-body">
+              <div className="ss-grid">
+                {
+                  software.filter(item=> item.prof ==="1").map(item=> {
+                    return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
+                  })
+                }
+              </div>
+              <div className="ss-grid">
+                {
+                  software.filter(item=> item.prof ==="2").map(item=> {
+                    return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
+                  })
+                }
+              </div>
+              <div className="ss-grid">
+                {
+                  software.filter(item=> item.prof ==="3").map(item=> {
+                    return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
+                  })
+                }
+              </div>
+              <div className="tooltip"></div>
+            </div>
+          </Grid>
+          <Grid xs={2}/>
+        </Grid>
+      </>
+  // </Container>
   );
 }
 

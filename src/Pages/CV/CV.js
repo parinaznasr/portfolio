@@ -7,6 +7,7 @@ import Softwareskills from "./softwareskills/index.js";
 import Experience from "./experience/index.js";
 import "./CV.css";
 import Footer from "../../UtilComponents/Footer/Footer";
+import Section from "./Section/Section";
 
 
 const CVComponent = () => {
@@ -28,10 +29,11 @@ const CVComponent = () => {
             <div id="bodycomponent"></div>
             <Header/>
             <AboutMe/>
+            <Section/>
             <Education/>
-            <Personalskills/>
-            <Softwareskills/>
             <Experience/>
+            <Softwareskills/>
+            <Personalskills/>
             <Footer />
         </div>
     );
