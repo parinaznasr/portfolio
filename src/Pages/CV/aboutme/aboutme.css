@@ -1,6 +1,8 @@
 .aboutme-container{
     background-color: rgba(128, 128, 128, 0.374);
     min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .aboutme-title{
