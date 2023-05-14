@@ -2,6 +2,7 @@ import React from "react";
 import "./experience.css";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
+import {StyledSection} from "../../../styles/StyledSeciton";
 
 const experience = () => {
     const experience = [
@@ -37,6 +38,7 @@ const experience = () => {
         },
     ];
     return (
+        <StyledSection>
         <div className="experience-section">
             {/*<Container>*/}
                 <Grid container spacing={1}>
@@ -59,6 +61,7 @@ const experience = () => {
                 </Grid>
             {/*</Container>*/}
         </div>
+        </StyledSection>
     );
 };
 

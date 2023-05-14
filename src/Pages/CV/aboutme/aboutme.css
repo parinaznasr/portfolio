@@ -17,4 +17,5 @@
     top: 160px;
     text-align: justify;
     font-size: calc(0.3vw + 0.9em);
+    block-size: fit-content
 }
