@@ -1,4 +1,4 @@
-.header-body{
+.header-body {
     background-color: rgb(89, 89, 89);
 }
 
@@ -9,9 +9,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.header-photo{
+.header-photo {
     height: 240px;
     background-image: url('../../../assets/images/cvpagepic0.PNG');
     width: 240px;
@@ -22,9 +24,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-shrink: 0; /* Add this to prevent shrinking */
 }
 
-.header-description{
+.header-description {
     position: absolute;
     top: 16%;
     left: 380px;
@@ -32,9 +35,29 @@
     font-weight: bold;
 }
 
-.header-name{
+.header-name {
     position: absolute;
     top: 24%;
     left: 380px;
     font-size: calc(14px + 2vw);
+}
+
+@media only screen and (max-width: 700px) {
+    .header-style {
+        height: 50vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-photo {
+        position: static;
+        margin: 20px;
+    }
+
+    .header-description,
+    .header-name {
+        position: static;
+        text-align: center;
+    }
 }
