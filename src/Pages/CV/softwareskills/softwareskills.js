@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './softwareskills.css'
 import Grid from "@mui/material/Unstable_Grid2";
 
-const Softwareskills = () => {
+const SoftwareSkills = () => {
   const [hoveredImg, setHoveredImg] = useState(null);
 
   const handleMouseEnter = (imgName) => {
@@ -91,4 +91,4 @@ const Softwareskills = () => {
   );
 }
 
-export default Softwareskills;
+export default SoftwareSkills;

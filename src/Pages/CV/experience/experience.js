@@ -38,7 +38,6 @@ const experience = () => {
         },
     ];
     return (
-        <StyledSection>
         <div className="experience-section">
             <Grid container spacing={2}>
                 <Grid item xs={1} md={2} />
@@ -59,7 +58,6 @@ const experience = () => {
                 <Grid item xs={1} md={2} />
             </Grid>
         </div>
-        </StyledSection>
     );
 };
 

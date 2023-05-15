@@ -2,7 +2,7 @@ import React from "react";
 import './personalskills.css'
 import Grid from "@mui/material/Unstable_Grid2";
 
-const Personalskills = () => {
+const PersonalSkills = () => {
   const skills = [
       'Excellent communication skills, both written and verbal',
       'Strong teamwork and collaboration skills',
@@ -40,4 +40,4 @@ const Personalskills = () => {
   );
 }
 
-export default Personalskills;
+export default PersonalSkills;

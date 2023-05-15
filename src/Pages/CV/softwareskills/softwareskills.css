@@ -4,7 +4,7 @@
 
 .ss-body {
     position: relative;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .ss-grid {
@@ -70,4 +70,15 @@
     margin-bottom: 0;
     font-size: calc(0.3vw + 0.9em);
     color: #666;
+}
+
+.ss-item {
+    position: relative;
+    display: inline-block;
+    /*margin: 8px;*/
+    transition: transform 0.2s;
+}
+
+.ss-item.is-hovered {
+    transform: scale(1.2);
 }
