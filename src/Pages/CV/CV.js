@@ -29,7 +29,7 @@ const CVComponent = () => {
             <div id="bodycomponent"></div>
             <Header/>
             <AboutMe/>
-            <Section/>
+            {/*<Section/>*/}
             <Education/>
             <Experience/>
             <SoftwareSkills/>
