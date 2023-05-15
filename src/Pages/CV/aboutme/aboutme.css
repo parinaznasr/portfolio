@@ -1,24 +1,23 @@
 .aboutme-container{
     background-color: rgba(128, 128, 128, 0.374);
-    min-height: 55vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 10px;
+    padding-top: 130px;
+    padding-bottom: 50px;
     margin-bottom: 8px;
+    align-items: center; /* vertically center content */
 }
 
 .aboutme-title{
-    position: relative;
-    top: 150px;
     font-size: 35px;
     font-weight: bold;
+    margin-bottom: 20px; /* remove top margin */
 }
 
 .aboutme-description{
-    position: relative;
-    top: 160px;
     text-align: justify;
     font-size: calc(0.3vw + 0.9em);
-    height: fit-content;
     overflow: auto;
+    margin: 0; /* remove top margin */
 }
