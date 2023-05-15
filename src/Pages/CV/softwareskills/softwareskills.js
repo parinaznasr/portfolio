@@ -51,7 +51,6 @@ const Softwareskills = () => {
     { name: "Sketchup", prof: "3", alt:"Sketchup", image:"./images/logos/sketchup.png", desc:""},
   ]
   return(
-  // <Container >
       <>
         <Grid container spacing={1}>
           <Grid xs={12}>
@@ -89,7 +88,6 @@ const Softwareskills = () => {
           <Grid xs={2}/>
         </Grid>
       </>
-  // </Container>
   );
 }
 

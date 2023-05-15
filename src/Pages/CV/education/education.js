@@ -29,7 +29,9 @@ const Education = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={1} sm={1} md={1}/>
+            <Grid item xs={1} sm={1} md={0}/>
+
+
             <Grid item xs={1} sm={1} md={0}/>
             <Grid item xs={10} sm={10} md={4}>
               <div className="education-item education-col-2">
@@ -52,12 +54,16 @@ const Education = () => {
                   <div className="awards-item">
                     <div className="awards-title">2019 Nitor Award (06/2019)</div>
                     <div className="awards-description">
-                      This award goes to a graduating student who will be continuing with post-secondary education and demonstrates a positive attitude, enthusiasm for learning, a sense of humor, involvement in school and community, a passion for one or more talent areas, an inclusive spirit of kindness, and friendship.
+                      This award goes to a graduating student who will be continuing with
+                      post-secondary education and demonstrates a positive attitude, enthusiasm
+                      for learning, a sense of humor, involvement in school and community, a passion
+                      for one or more talent areas, an inclusive spirit of kindness, and friendship.
                     </div>
                   </div>
                 </div>
               </div>
             </Grid>
+            <Grid item xs={1} sm={1} md={2}/>
           </Grid>
           <div className="education-container"></div>
         </div>

@@ -40,26 +40,24 @@ const experience = () => {
     return (
         <StyledSection>
         <div className="experience-section">
-            {/*<Container>*/}
-                <Grid container spacing={1}>
-                    <Grid xs={2}/>
-                    <Grid xs={8}>
-                        <h2 className="experience-title">Experience</h2>
-                        {experience.map((item) => {
-                            return (
-                                <div className="experience-item">
-                                    <div className="experience-item__title">{item.title}</div>
-                                    <div className="experience-item__dates">
-                                        {item.position} ({item.date})
-                                    </div>
-                                    <div className="experience-item__description">{item.desc}</div>
+            <Grid container spacing={2}>
+                <Grid item xs={1} md={2} />
+                <Grid item xs={10} md={8}>
+                    <h2 className="experience-title">Experience</h2>
+                    {experience.map((item) => {
+                        return (
+                            <div className="experience-item">
+                                <div className="experience-item__title">{item.title}</div>
+                                <div className="experience-item__dates">
+                                    {item.position} ({item.date})
                                 </div>
-                            );
-                        })}
-                    </Grid>
-                    <Grid xs={2}/>
+                                <div className="experience-item__description">{item.desc}</div>
+                            </div>
+                        );
+                    })}
                 </Grid>
-            {/*</Container>*/}
+                <Grid item xs={1} md={2} />
+            </Grid>
         </div>
         </StyledSection>
     );

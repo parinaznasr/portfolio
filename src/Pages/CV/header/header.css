@@ -3,7 +3,7 @@
 }
 
 .header-style{
-    height:30vh;
+    height:40vh;
     background-color: rgb(253, 255, 233);
     background-image: url("../../../assets/images/cvpagepic1.jpg");
     background-position: center;
@@ -17,9 +17,10 @@
     height: 240px;
     background-image: url('../../../assets/images/cvpagepic0.PNG');
     width: 240px;
-    position: absolute;
-    top: 17%;
+    position:relative;
+    top: 45%;
     left: 100px;
+    z-index: 999;
     border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +32,7 @@
     position: absolute;
     top: 16%;
     left: 380px;
-    font-size: calc(18px + 2vw);
+    font-size: min(calc(16px + 2vw), 60px);
     font-weight: bold;
 }
 
@@ -39,19 +40,21 @@
     position: absolute;
     top: 24%;
     left: 380px;
-    font-size: calc(14px + 2vw);
+    font-size: min(calc(14px + 2vw), 50px);
+    padding-top: min(calc(14px + 2vw),15px);
 }
 
 @media only screen and (max-width: 700px) {
     .header-style {
-        height: 50vh;
+        height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position:relative;
     }
 
     .header-photo {
-        position: static;
+        position:static;
         margin: 20px;
     }
 
