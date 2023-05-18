@@ -23,8 +23,7 @@ const CVComponent = () => {
     }
 
     return (
-        <div className="cvbody">
-            <div id="bodycomponent"/>
+        <div className="cvbody" id="bodycomponent">
             <Header/>
             <AboutMe/>
             <Education/>
