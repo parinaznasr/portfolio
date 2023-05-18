@@ -89,7 +89,7 @@ const Footer = () => {
     return(
         <StyledFooter>
             <div className="links">
-                <div className="icon fade-in" onClick={() => { }}>
+                <div className="icon fade-in" onClick={() => navigate('../projects')}>
                     <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                     {/*<div>Projects</div>*/}
                 </div>

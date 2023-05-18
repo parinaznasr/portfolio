@@ -27,6 +27,10 @@ const FirstComponent = (props) => {
         navigate('./cv')
     }
 
+    const projectClicked = (event) =>{
+        navigate('./projects')
+    }
+
     const scrollToBottom = () => {
         const element = document.getElementById('contactscomponentid');
         if (element) {
@@ -75,11 +79,11 @@ const FirstComponent = (props) => {
                 <div className="icon-list">
                     <div className="icon fade-in" onClick={() => { }}>
                         <div id="contactscomponentid"></div>
-                        <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                        <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out'}}  onClick={projectClicked} />
                         <div>Projects</div>
                     </div>
                     <div className="icon fade-in">
-                        <PersonIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} onClick={cvClicked}/>
+                        <PersonIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out' }} onClick={cvClicked}/>
                         <div>CV</div>
                     </div>
                     <div className="icon fade-in" onClick={contactClicked}>
