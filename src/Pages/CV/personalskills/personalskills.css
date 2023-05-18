@@ -18,7 +18,16 @@
 
 .skills-list li {
     margin-bottom: 10px;
-    margin-left: -20px;
+    margin-left: -25px;
+}
+
+@media only screen and (max-width: 899px) {
+    .skills-title {
+        font-size: 35px;
+        align-text: center;
+        justify-content: left;
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 768px) {

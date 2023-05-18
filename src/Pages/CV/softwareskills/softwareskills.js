@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './softwareskills.css'
 import Grid from "@mui/material/Unstable_Grid2";
 
@@ -63,22 +63,22 @@ const SoftwareSkills = () => {
             <div className="ss-body">
               <div className="ss-grid">
                 {
-                  software.filter(item=> item.prof ==="1").map(item=> {
-                    return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
+                  software.filter(item=> item.prof ==="1").map((item, index)=> {
+                    return(<StyledImage key={index} image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
                   })
                 }
               </div>
               <div className="ss-grid">
                 {
-                  software.filter(item=> item.prof ==="2").map(item=> {
-                    return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
+                  software.filter(item=> item.prof ==="2").map((item , index) => {
+                    return(<StyledImage key={index} image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
                   })
                 }
               </div>
               <div className="ss-grid">
                 {
-                  software.filter(item=> item.prof ==="3").map(item=> {
-                    return(<StyledImage image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
+                  software.filter(item=> item.prof ==="3").map((item, index)=> {
+                    return(<StyledImage key={index} image={item.image} name={item.name} alt={item.alt} desc={item.desc}/>)
                   })
                 }
               </div>

@@ -10,8 +10,8 @@ const Education = () => {
       <div className="education-body">
         <div className="education-blackbackground">
           <Grid container spacing={2}>
-            <Grid item xs={1} sm={1} md={2}/>
-            <Grid item xs={10} sm={10} md={4}>
+            <Grid xs={1} sm={1} md={2}/>
+            <Grid xs={10} sm={10} md={4}>
               <div className="education-item education-col-2">
                 <div className="education-title">Education</div>
                 <div className="education">
@@ -29,11 +29,11 @@ const Education = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={1} sm={1} md={0}/>
+            <Grid xs={1} sm={1} md={0}/>
 
 
-            <Grid item xs={1} sm={1} md={0}/>
-            <Grid item xs={10} sm={10} md={4}>
+            <Grid xs={1} sm={1} md={0}/>
+            <Grid xs={10} sm={10} md={4}>
               <div className="education-item education-col-2">
                 <div className="award-title">Awards</div>
                 <div className="awards-container">
@@ -63,7 +63,7 @@ const Education = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={1} sm={1} md={2}/>
+            <Grid xs={1} sm={1} md={2}/>
           </Grid>
           <div className="education-container"></div>
         </div>

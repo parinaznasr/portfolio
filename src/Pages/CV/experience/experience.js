@@ -40,12 +40,12 @@ const experience = () => {
     return (
         <div className="experience-section">
             <Grid container spacing={2}>
-                <Grid item xs={1} md={2} />
-                <Grid item xs={10} md={8}>
+                <Grid xs={1} md={2} />
+                <Grid xs={10} md={8}>
                     <h2 className="experience-title">Experience</h2>
-                    {experience.map((item) => {
+                    {experience.map((item, index) => {
                         return (
-                            <div className="experience-item">
+                            <div key ={index} className="experience-item">
                                 <div className="experience-item__title">{item.title}</div>
                                 <div className="experience-item__dates">
                                     {item.position} ({item.date})
@@ -55,7 +55,7 @@ const experience = () => {
                         );
                     })}
                 </Grid>
-                <Grid item xs={1} md={2} />
+                <Grid xs={1} md={2} />
             </Grid>
         </div>
     );

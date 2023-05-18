@@ -7,7 +7,6 @@ import SoftwareSkills from "./softwareskills/softwareskills";
 import Experience from "./experience/experience";
 import "./CV.css";
 import Footer from "../../UtilComponents/Footer/Footer";
-import Section from "./Section/Section";
 
 
 const CVComponent = () => {
@@ -15,7 +14,6 @@ const CVComponent = () => {
     useEffect(() => {
         scrollToTop();
     })
-
 
     const scrollToTop = () => {
         const element = document.getElementById('header-body');
@@ -26,10 +24,9 @@ const CVComponent = () => {
 
     return (
         <div className="cvbody">
-            <div id="bodycomponent"></div>
+            <div id="bodycomponent"/>
             <Header/>
             <AboutMe/>
-            {/*<Section/>*/}
             <Education/>
             <Experience/>
             <SoftwareSkills/>
