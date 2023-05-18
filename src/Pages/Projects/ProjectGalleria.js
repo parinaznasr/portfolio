@@ -97,10 +97,12 @@ const ProjectGalleria = () => {
             </React.Fragment>
         );
     }
+
+    console.log(images)
     return (
         <Container>
             <div className={classes.root}>
-                {projects.map((project, index) => (
+                { projects.map((project, index) => (
                     <Card key={index} className={classes.card}>
                         <CardContent>
                             <Typography variant="h5" component="h2">
@@ -113,15 +115,14 @@ const ProjectGalleria = () => {
                                 <div className="card">
                                     <Galleria
                                         circular autoPlay transitionInterval={3000}
-                                        value={images}
+                                        value={images.filter(item => {console.log(index); return item.project === expandedIndex.toString()})}
                                         responsiveOptions={responsiveOptions}
-                                        numVisible={5}
+                                        numVisible={4}
                                         item={itemTemplate}
                                         thumbnail={thumbnailTemplate}
                                         caption={caption}
                                         style={{ maxWidth: '640px' }}
                                     />
-                                    {/*<img src={'./images/logos/3ds-max.png'}/>*/}
                                 </div>
                             ) : null}
                         </CardContent>

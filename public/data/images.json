@@ -1,14 +1,14 @@
 
 {
   "data":[
-    {"itemImageSrc": "./images/Projects/l1.png","thumbnailImageSrc": "./images/Projects/l1.png","alt": "Description for Image 1","title": "Project 1 - Title 1"},
-    {"itemImageSrc": "./images/Projects/l2.png","thumbnailImageSrc": "./images/Projects/l2.png","alt": "Description for Image 2","title": "Project 1 - Title 2"},
-    {"itemImageSrc": "./images/Projects/l3.png","thumbnailImageSrc": "./images/Projects/l3.png","alt": "Description for Image 3","title": "Project 1 - Title 3"},
-    {"itemImageSrc": "./images/Projects/l4.png","thumbnailImageSrc": "./images/Projects/l4.png","alt": "Description for Image 4","title": "Project 1 - Title 4"},
-    {"itemImageSrc": "./images/Projects/p1.png","thumbnailImageSrc": "./images/Projects/p1.png","alt": "Description for Image 1","title": "Project 2 - Title 1"},
-    {"itemImageSrc": "./images/Projects/p2.png","thumbnailImageSrc": "./images/Projects/p2.png","alt": "Description for Image 2","title": "Project 2 - Title 2"},
-    {"itemImageSrc": "./images/Projects/p3.png","thumbnailImageSrc": "./images/Projects/p3.png","alt": "Description for Image 3","title": "Project 2 - Title 3"},
-    {"itemImageSrc": "./images/Projects/p4.png","thumbnailImageSrc": "./images/Projects/p4.png","alt": "Description for Image 4","title": "Project 2 - Title 4"}
+    {"project":  "0", "itemImageSrc": "./images/Projects/p1.png","thumbnailImageSrc": "./images/Projects/p1.png","alt": "Description for Image 1","title": "Project 2 - Title 1"},
+    {"project":  "0","itemImageSrc": "./images/Projects/p2.png","thumbnailImageSrc": "./images/Projects/p2.png","alt": "Description for Image 2","title": "Project 2 - Title 2"},
+    {"project":  "0", "itemImageSrc": "./images/Projects/p3.png","thumbnailImageSrc": "./images/Projects/p3.png","alt": "Description for Image 3","title": "Project 2 - Title 3"},
+    {"project":  "0","itemImageSrc": "./images/Projects/p4.png","thumbnailImageSrc": "./images/Projects/p4.png","alt": "Description for Image 4","title": "Project 2 - Title 4"},
+    {"project":  "1", "itemImageSrc": "./images/Projects/l1.png","thumbnailImageSrc": "./images/Projects/l1.png","alt": "Description for Image 1","title": "Project 1 - Title 1"},
+    {"project":  "1", "itemImageSrc": "./images/Projects/l2.png","thumbnailImageSrc": "./images/Projects/l2.png","alt": "Description for Image 2","title": "Project 1 - Title 2"},
+    {"project":  "1", "itemImageSrc": "./images/Projects/l3.png","thumbnailImageSrc": "./images/Projects/l3.png","alt": "Description for Image 3","title": "Project 1 - Title 3"},
+    {"project":  "1", "itemImageSrc": "./images/Projects/l4.png","thumbnailImageSrc": "./images/Projects/l4.png","alt": "Description for Image 4","title": "Project 1 - Title 4"}
   ]
 }
 
