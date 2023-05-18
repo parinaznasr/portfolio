@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import BlurOnIcon from "@mui/icons-material/BlurOn";
 import HomeIcon from "@mui/icons-material/Home";
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import {useNavigate} from "react-router-dom";
 
 const StyledFooter = styled.div`
@@ -100,7 +100,7 @@ const Footer = () => {
                 </div>
 
                 <div className="icon fade-in" onClick={() => document.getElementById('bodycomponent').scrollIntoView({ behavior: 'smooth' })}>
-                    <ArrowCircleUpIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <KeyboardArrowUpIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                     {/*<div>Top</div>*/}
                 </div>
 
