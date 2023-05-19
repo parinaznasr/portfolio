@@ -2,9 +2,9 @@ import React, {
     useState, useEffect,
 } from "react";
 import "./Home.css";
-import BlurOnIcon from '@mui/icons-material/BlurOn';
-import PersonIcon from '@mui/icons-material/Person';
-import SendIcon from '@mui/icons-material/Send';
+import BlurOnRoundedIcon from '@mui/icons-material/BlurOnRounded';
+import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import { useNavigate } from "react-router-dom";
 import Contact from "../../Pages/Home/Contact/Contact";
 
@@ -78,15 +78,15 @@ const FirstComponent = (props) => {
                 <div className="icon-list" >
                     <div className="icon fade-in" onClick={() => { }}>
                         <div id="contactscomponentid"></div>
-                        <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out'}}  onClick={projectClicked} />
+                        <BlurOnRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out'}}  onClick={projectClicked} />
                         <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>Projects</div>
                     </div>
                     <div className="icon fade-in">
-                        <PersonIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out' }} onClick={cvClicked}/>
+                        <PersonRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out' }} onClick={cvClicked}/>
                         <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>CV</div>
                     </div>
                     <div className="icon fade-in" onClick={contactClicked}>
-                        <SendIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                        <SendRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                         <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>Contanct</div>
                     </div>
                 </div>

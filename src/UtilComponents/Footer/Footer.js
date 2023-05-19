@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
-import BlurOnIcon from "@mui/icons-material/BlurOn";
-import HomeIcon from "@mui/icons-material/Home";
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import BlurOnRoundedIcon from '@mui/icons-material/BlurOnRounded';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import KeyboardControlKeyRoundedIcon from '@mui/icons-material/KeyboardControlKeyRounded';
 import {useNavigate} from "react-router-dom";
 
 const StyledFooter = styled.div`
@@ -88,17 +88,17 @@ const Footer = () => {
         <StyledFooter>
             <div className="links">
                 <div className="icon fade-in" onClick={() => navigate('../projects')}>
-                    <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <BlurOnRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                     {/*<div>Projects</div>*/}
                 </div>
 
                 <div className="icon fade-in" onClick={() => navigate('../')}>
-                    <HomeIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <HomeRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                     {/*<div>Home</div>*/}
                 </div>
 
                 <div className="icon fade-in" onClick={() => document.getElementById('bodycomponent').scrollIntoView({ behavior: 'smooth' })}>
-                    <KeyboardArrowUpIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
+                    <KeyboardControlKeyRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                     {/*<div>Top</div>*/}
                 </div>
 
