@@ -30,17 +30,17 @@
 
 .header-description {
     position: absolute;
-    top: 16%;
-    left: 380px;
-    font-size: min(calc(16px + 2vw), 60px);
+    top: 25%;
+    left: 350px;
+    font-size: min(calc(26px + 1vw), 50px);
     font-weight: bold;
 }
 
 .header-name {
     position: absolute;
-    top: 24%;
-    left: 380px;
-    font-size: min(calc(14px + 2vw), 50px);
+    top: 32%;
+    left: 350px;
+    font-size: min(calc(22px + 1vw), 40px);
     padding-top: min(calc(14px + 2vw),15px);
 }
 

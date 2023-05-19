@@ -3,6 +3,7 @@ import "./Contact.css";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';
+import Container from "@mui/material/Container";
 
 const CopyToClipboard = ({ content, children }) => {
     const [showTooltip, setShowTooltip] = useState(false);
@@ -43,8 +44,8 @@ const CopyToClipboard = ({ content, children }) => {
 const ContactComponent = () => {
   return (
     <div className="contact-container">
+        <Container>
       <div className="contact-items">
-        {/*<div className="contact-items-frame">*/}
           <div className="contact-item fade-in">
             <div className="contact-logo"><FmdGoodIcon sx={{ fontSize: 45 }} /></div>
             <div className="contact-type">Location</div>
@@ -62,19 +63,19 @@ const ContactComponent = () => {
           <div className="contact-item fade-in">
             <div className="contact-logo"><EmailIcon sx={{ fontSize: 45 }} /></div>
             <div className="contact-type">Email</div>
-            <a href="mailto:yasamanpazoki@gmail.com" className="contact-email">
-                <CopyToClipboard className="contact-info" content="yasamanpazoki@gmail.com">
-                    <span>yasamanpazoki@gmail.com</span>
-                </CopyToClipboard>
-            </a><br/>
+            {/*<a href="mailto:yasamanpazoki@gmail.com" className="contact-email">*/}
+            {/*    <CopyToClipboard className="contact-info" content="yasamanpazoki@gmail.com">*/}
+            {/*        <span>yasamanpazoki@gmail.com</span>*/}
+            {/*    </CopyToClipboard>*/}
+            {/*</a><br/>*/}
             <a href="mailto:yasaman.pazoki@mail.utoronto.ca" className="contact-email">
                 <CopyToClipboard className="contact-info" content="yasaman.pazoki@mail.utoronto.ca">
                     <span>yasaman.pazoki@mail.utoronto.ca</span>
                 </CopyToClipboard>
             </a>
           </div>
-        {/*</div>*/}
       </div>
+        </Container>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 .contact-container{
     background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 50px;
 }
 
 .contact-items{
@@ -13,8 +14,8 @@
 
 .contact-item{
     width: 20%;
-    min-width: 220px;
-    min-height: 300px;
+    width: 270px;
+    height: 270px;
     margin: 10px;
     border-radius: 35px;
     background-color: rgb(220, 220, 219, 0.7);
@@ -61,7 +62,7 @@
 }
 
 .fade-in {
-    animation-delay: 3000;
+    animation-delay: 5s;
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
     -moz-animation: fadeIn ease 3s;

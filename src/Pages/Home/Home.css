@@ -36,7 +36,7 @@
 }
 
 .icon-container {
-    /*height: 27vh;*/
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -49,6 +49,7 @@
     grid-template-columns: 20% 20% 20%;
     grid-column-gap: 4%;
     margin: 0 auto;
+    boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.1)';
 }
 
 .icon {

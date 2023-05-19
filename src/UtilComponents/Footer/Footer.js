@@ -9,11 +9,9 @@ const StyledFooter = styled.div`
   width: 100%;
   bottom: 0px;
   right: 0px;
-  padding: 10px 0;
   white-space: nowrap;
-  background-color: #c4c3bc;
+  background-color: #45484A;
   font-size: calc(0.8em + 0.2vw);
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;

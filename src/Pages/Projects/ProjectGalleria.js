@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {
-    Typography, Card, CardContent, CardMedia, Grid,
-    Button, makeStyles, CardActions, ImageList, ImageListItem, ImageListItemBar
+    Typography, Card, CardContent, Button, makeStyles, CardActions,
 } from '@material-ui/core';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';

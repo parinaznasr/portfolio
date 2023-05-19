@@ -1,5 +1,5 @@
 .skills-section {
-    background-color: rgb(231, 231, 231);
+    background-color: #e3e3e0;
     padding-bottom: 20px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .skills-list {
-    font-size: calc(0.3vw + 0.9em);
+    font-size: calc(0.2vw + 0.8em);
     line-height: 1.5;
     text-align: left;
 }
@@ -32,12 +32,12 @@
 
 @media only screen and (min-width: 768px) {
     .skills-list {
-        font-size: calc(0.3vw + 0.9em);
+        font-size: calc(0.2vw + 0.8em);
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .skills-list {
-        font-size: calc(0.3vw + 0.9em);
+        font-size: calc(0.2vw + 0.8em);
     }
 }
