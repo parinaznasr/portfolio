@@ -1,6 +1,13 @@
 .skills-section {
     background-color: #e3e3e0;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ss-content{
+    display: flex;
+    justify-content: center;
 }
 
 .skills-title {
@@ -26,7 +33,7 @@
     .skills-title {
         font-size: 35px;
         align-text: center;
-        justify-content: left;
+        justify-content: center;
         display: flex;
     }
 }
