@@ -4,7 +4,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className="header-body">
+    <div className="header-body" id="header-body">
       <div className="header-style">
         <div className="header-photo"/>
           <div className="header-description">Curriculum Vitae</div>

@@ -4,12 +4,16 @@
     background-position-x: center;
     background-position-y: center;
     background-attachment: fixed;
+    background-size: cover;
     color: white;
+    margin-top: -10px;
 }
 
 .education-blackbackground{
     background-color: rgba(58, 58, 58, 0.802);
     width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 .education {
@@ -33,10 +37,9 @@
     justify-content: center;
 }
 
-.education-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.education-content {
+    max-width: 1940px;
+    /*display: flex;*/
 }
 
 .education-item {

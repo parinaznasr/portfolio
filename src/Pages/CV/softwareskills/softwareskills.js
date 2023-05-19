@@ -51,7 +51,7 @@ const SoftwareSkills = () => {
     { name: "Sketchup", prof: "3", alt:"Sketchup", image:"./images/logos/sketchup.png", desc:""},
   ]
   return(
-      <div>
+      <div className="ss-container">
         <Grid container spacing={1}>
           <Grid xs={12}>
             <h2 className="ss-title">Software Skills</h2>

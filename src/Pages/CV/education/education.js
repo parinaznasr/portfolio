@@ -9,6 +9,7 @@ const Education = () => {
   return (
       <div className="education-body">
         <div className="education-blackbackground">
+          <div className="education-content">
           <Grid container spacing={2}>
             <Grid xs={1} sm={1} md={2}/>
             <Grid xs={10} sm={10} md={4}>
@@ -65,7 +66,7 @@ const Education = () => {
             </Grid>
             <Grid xs={1} sm={1} md={2}/>
           </Grid>
-          <div className="education-container"></div>
+          </div>
         </div>
       </div>
   );
