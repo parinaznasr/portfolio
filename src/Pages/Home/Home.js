@@ -74,20 +74,20 @@ const FirstComponent = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="icon-container" style={{  boxShadow: '0px 0px 0px 0px rgba(255, 255, 255, 1)' }}>
+            <div className="icon-container">
                 <div className="icon-list" >
                     <div className="icon fade-in" onClick={() => { }}>
                         <div id="contactscomponentid"></div>
                         <BlurOnIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out'}}  onClick={projectClicked} />
-                        <div style={{fontSize: '14px'}}>Projects</div>
+                        <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>Projects</div>
                     </div>
                     <div className="icon fade-in">
                         <PersonIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out' }} onClick={cvClicked}/>
-                        <div style={{fontSize: '14px'}}>CV</div>
+                        <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>CV</div>
                     </div>
                     <div className="icon fade-in" onClick={contactClicked}>
                         <SendIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
-                        <div style={{fontSize: '14px'}}>Contanct</div>
+                        <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>Contanct</div>
                     </div>
                 </div>
             </div>

@@ -29,10 +29,7 @@
 
 .name {
     position: static;
-    /*font-size: 40px;*/
     font-size:calc(0.8vw + 0.2em);
-    /*margin-left: 10px;*/
-    /*margin-top: -3%;*/
 }
 
 .icon-container {
@@ -49,7 +46,6 @@
     grid-template-columns: 20% 20% 20%;
     grid-column-gap: 4%;
     margin: 0 auto;
-    boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.1)';
 }
 
 .icon {
@@ -70,7 +66,7 @@
 }
 
 .icon > div {
-    font-size:calc(1.8vw + 0.2em);
+    font-size:calc(1.5vw + 0.2em);
 }
 
 .fade-in {
