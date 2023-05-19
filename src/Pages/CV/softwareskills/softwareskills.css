@@ -10,7 +10,7 @@
 }
 
 .ss-grid {
-    margin: 70px 0px 0px 0px;
+    margin: 30px 0px 20px 0px;
     font-size: calc(0.3vw + 0.9em);
     line-height: 35px;
     display: flex;
@@ -47,6 +47,7 @@
 .ss-title {
     font-size: 35px;
     align-text: center;
+    margin-top: 75px;
     justify-content: center;
     display: flex;
 }
@@ -69,7 +70,6 @@
 }
 
 .tooltip-text p {
-    margin-bottom: 0;
     font-size: calc(0.3vw + 0.9em);
     color: #666;
 }
