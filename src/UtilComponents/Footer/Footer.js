@@ -10,12 +10,12 @@ const StyledFooter = styled.div`
   bottom: 0px;
   right: 0px;
   white-space: nowrap;
-  background-color: #45484A;
+  background-color: #2b2b34;
   font-size: calc(0.8em + 0.2vw);
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .links {
     width: 50%;
     display: flex;
@@ -49,7 +49,7 @@ const StyledFooter = styled.div`
       margin: 0px 0px 5px 0px;
       font-size: calc(0.2vw + 1em);
       font-family: 'Rubik', sans-serif;
-      font-weight: none;
+      font-weight: None;
       border-bottom: 1px solid white;
       padding-bottom: 3px;
       color: white;
@@ -84,10 +84,17 @@ const Footer = () => {
         };
     }, []);
 
+    const navigateToExternalLink = () => {
+        const url = 'https://issuu.com/pazoook/docs/pazokiyasaman_portfolio_2023_compressed';
+        //window.location.href = url; // Option 1: Redirect the current window
+        // OR
+        window.open(url, '_blank'); // Option 2: Open the link in a new tab/window
+    };
+
     return(
         <StyledFooter>
             <div className="links">
-                <div className="icon fade-in" onClick={() => navigate('../projects')}>
+                <div className="icon fade-in" onClick={navigateToExternalLink}>
                     <BlurOnRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out', }} />
                     {/*<div>Projects</div>*/}
                 </div>

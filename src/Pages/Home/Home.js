@@ -26,10 +26,6 @@ const FirstComponent = (props) => {
         navigate('./cv')
     }
 
-    const projectClicked = (event) =>{
-        navigate('./projects')
-    }
-
     const scrollToBottom = () => {
         const element = document.getElementById('contactscomponentid');
         if (element) {
@@ -64,6 +60,13 @@ const FirstComponent = (props) => {
         };
     }, []);
 
+    const navigateToExternalLink = () => {
+        const url = 'https://issuu.com/pazoook/docs/pazokiyasaman_portfolio_2023_compressed';
+        //window.location.href = url; // Option 1: Redirect the current window
+        // OR
+        window.open(url, '_blank'); // Option 2: Open the link in a new tab/window
+    };
+
     return (
         <div className="body">
             <div className="section1">
@@ -78,7 +81,7 @@ const FirstComponent = (props) => {
                 <div className="icon-list" >
                     <div className="icon fade-in" onClick={() => { }}>
                         <div id="contactscomponentid"></div>
-                        <BlurOnRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out'}}  onClick={projectClicked} />
+                        <BlurOnRoundedIcon sx={{ fontSize: iconSize, transition: 'font-size 0.2s ease-in-out'}}  onClick={navigateToExternalLink} />
                         <div style={{fontSize: 'calc(0.2vw + 0.6em)'}}>Projects</div>
                     </div>
                     <div className="icon fade-in">
