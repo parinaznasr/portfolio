@@ -35,14 +35,15 @@ const PersonalSkills = () => {
               <Grid xs={1} sm={1} md={2}/>
           </Grid>
           { (width > breakpoint) ?
-          <Grid container spacing={2} className="ss-content">
-                  <Grid xs={2} sm={2} md={2}/>
-                  <Grid xs={4} sm={4} md={4}>
+          <Grid container spacing={1} className="ss-content">
+                  <Grid xs={3} sm={3} md={3} />
+                  <Grid xs={3} sm={3} md={3}>
                   <ul className="skills-list">
                       { skills.slice((skills.length)/2, skills.length).map((item, index)=> {return(<li key={index}>{item}</li>)})}
                   </ul>
               </Grid>
-              <Grid xs={4} sm={4} md={4}>
+              <Grid xs={1} sm={1} md={1} />
+              <Grid xs={3} sm={3} md={3}>
                   <ul className="skills-list">
                       { skills.slice(0,(skills.length)/2).map((item, index)=> {return(<li key={index}>{item}</li>)})}
                   </ul>
@@ -56,7 +57,7 @@ const PersonalSkills = () => {
                           { skills.map((item, index)=> {return(<li key={index}>{item}</li>)})}
                       </ul>
                   </Grid>
-                  <Grid xs={1} sm={1} md={2}/>
+                  <Grid xs={2} sm={2} md={4}/>
               </Grid>
           }
       </div>
