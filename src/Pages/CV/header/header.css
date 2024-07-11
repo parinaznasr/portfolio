@@ -25,7 +25,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-shrink: 0; /* Add this to prevent shrinking */
+    flex-shrink: 0;
 }
 
 .header-description {
@@ -44,7 +44,7 @@
     padding-top: min(calc(14px + 2vw),15px);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .header-style {
         height: 100%;
         flex-direction: column;
@@ -63,4 +63,26 @@
         position: static;
         text-align: center;
     }
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .header-style {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+  }
+
+  .header-photo {
+    position:static;
+    margin: 20px;
+  }
+
+  .header-description,
+  .header-name {
+    position: static;
+    text-align: center;
+  }
 }

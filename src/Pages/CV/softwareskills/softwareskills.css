@@ -83,3 +83,28 @@
 .ss-item.is-hovered {
     transform: scale(1.2);
 }
+
+
+.tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ss-item:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip-content {
+  max-width: 200px;
+  text-align: center;
+}
