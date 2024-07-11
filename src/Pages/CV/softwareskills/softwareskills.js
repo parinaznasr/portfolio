@@ -18,7 +18,7 @@ const SoftwareSkills = () => {
       <div className="tooltip">
         <div className="tooltip-content">
           <strong>{name}</strong><br />
-          {text || "No description available"}
+          {text}
         </div>
       </div>
     );
